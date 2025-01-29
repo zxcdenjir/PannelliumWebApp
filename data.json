@@ -1,0 +1,31 @@
+{
+    "room1": {
+        "id": "room1",
+        "title": "Панорама 1",
+        "image": "test1.png",
+        "hotspots": [
+            {
+                "pitch": -5,
+                "yaw": 0,
+                "type": "scene",
+                "text": "В панораму 1",
+                "sceneId": "room2"
+            }
+        ]
+    },
+    "room2": {
+        "id": "room2",
+        "title": "Панорама 2",
+        "image": "test2.png",
+        "hotspots": [
+            {
+                "pitch": -5,
+                "yaw": 180,
+                "type": "scene",
+                "text": "В панораму 2",
+                "sceneId": "room1",
+                "targetYaw": 180
+            }
+        ]
+    }
+}

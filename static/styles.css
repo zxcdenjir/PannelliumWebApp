@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#panorama-container {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+}
+
+.pnlm-hotspot {
+    background: rgba(40, 40, 40, 0.9);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.pnlm-hotspot:hover {
+    background: rgba(80, 160, 255, 0.9);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Анимация загрузки */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.pnlm-render-container {
+    animation: fadeIn 1.2s ease-out;
+}
+
+/* Индикатор загрузки */
+.loading-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    z-index: 1000;
+    display: none;
+}
